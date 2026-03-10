@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Registration Form</title>
+    <link rel="stylesheet" href="sales-reg.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="circle">
+          <span class="square"></span>
+          <p class="text">Allen Nakalema: Sales Manager</p>
+        </div>
+        <div class="side-bar">
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div class="side-bar">
+          <a href="sales-management.html">Sales Management</a>
+        </div>
+        <div class="side-bar">
+          <a href="supplier-management.html">Supplier Management</a>
+        </div>
+        <div class="side-bar">
+          <a href="stock-management.html">Stock Management</a>
+        </div>
+        <div class="side-bar">
+          <a href="transport-management.html">Transport Management</a>
+        </div>
+      </div>
+      <div class="content">
+        <form action="" method="get">
+          <!--section-->
+
+          <section>
+            <h1>Sales Registration</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="salesDate">Sales Date</label>
+                <input type="date" />
+              </div>
+              <div class="input-section">
+                <label for="salesPerson">Sales Person</label>
+                <select name="" id="">
+                  <option value="" disable selected>
+                    Select a representative
+                  </option>
+                  <option value="1">Isaac Ssemugenyi</option>
+                  <option value="2">Melanie Maria</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h1>Customer Details</h1>
+            <div class="input-box">
+              <div class="input-sect">
+                <label for="fullName">Name</label>
+                <input
+                  type="text"
+                  name="fullName"
+                  placeholder="Enter full name"
+                  required
+                />
+              </div>
+              <div class="input-sect">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter Phone Number"
+                  required
+                />
+              </div>
+              <div class="input-sect box">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter Email"
+                  required
+                />
+              </div>
+              <div class="input-sect box">
+                <label for="customerType">Type</label>
+                <select required>
+                  <option value="" disabled selected>
+                    Select Customer Type
+                  </option>
+                  <option value="retailer">Retailer</option>
+                  <option value="wholesaler">Wholesaler</option>
+                  <option value="consumer">Consumer</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h1>Items</h1>
+            <div class="items-container">
+              <div>
+                <label for="pdtid">Product Id</label>
+                <input type="text" name="pdtid" placeholder="Pdt ID" required />
+              </div>
+              <div>
+                <label for="quantity">Quantity</label>
+                <input type="number" name="quantity" min="1" required />
+              </div>
+              <div>
+                <label for="unitPrice">Unit Price</label>
+                <input type="number" name="unitPrice" step="0.01" required />
+              </div>
+            </div>
+            <div class="items-container">
+              <div>
+                <label for="pdtid">Product Id</label>
+                <input type="text" name="pdtid" placeholder="Pdt ID" required />
+              </div>
+              <div>
+                <label for="quantity">Quantity</label>
+                <input type="number" name="quantity" min="1" required />
+              </div>
+              <div>
+                <label for="unitPrice">Unit Price</label>
+                <input type="number" name="unitPrice" step="0.01" required />
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="buttons">
+              <button type="reset" class="reset">Cancel</button>
+              <button type="submit" class="submit">Submit</button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
