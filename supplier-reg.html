@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supplier Registration Form</title>
+    <link rel="stylesheet" href="supplier-reg.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="top">
+        <div>
+          <img src="images/office.png" class="image" />
+        </div>
+        <div>
+          <h1>Supplier Registration</h1>
+        </div>
+        </div>
+        <div class="note">
+          <p>
+            please fill out all required fields to registrer as a supplier with
+            our platform.
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <form action="" method="get">
+          <!-- section -->
+
+          <section>
+            <div class="company">
+              <div class="head">
+                <img src="images/office.png" class="images"/>
+                <h2>Company Information</h2>
+              </div>
+            
+              <div class="name">
+                <label for="companyName">Company Name *</label>
+                <input type="text" name="companyName" placeholder="Enter company name" required />
+              </div>
+              <div class="box-4">
+                <div>
+                  <label for="businessRestrationNumber"
+                    >Business Registration Number *</label
+                  >
+                  <input
+                    type="text"
+                    name="businessRestrationNumber"
+                    placeholder="e.g, 123456789"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="yearEstablished">Year Established *</label>
+                  <input
+                    type="text"
+                    name="yearEstablished"
+                    placeholder="e.g, 2010"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="name">
+              <label for="companyType">Company Type *</label>
+              <select>
+                <option value="">Select company type</option>
+                <option value="soleproprietorship">Sole proprietorship</option>
+                <option value="partnership">Partnership</option>
+                <option value="llc">Limited Liability Company (LLC)</option>
+                <option value="corporation">Corporation</option>
+                <option value="cooperative">Cooperative</option>
+              </select>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="contact">
+              <div class="head">
+                <img src="images/contact.png" class="images"/>
+                <h2>Contact Information</h2>
+              </div>
+              <div class="box-4">
+                <div class="box">
+                  <label for="contactPersonName">Contact Person Name *</label>
+                  <input
+                    type="text"
+                    name="contactPersonName"
+                    placeholder="Full name"
+                    required
+                  />
+                </div>
+                <div class="box">
+                  <label for="jobTitle">Job Title *</label>
+                  <input
+                    type="text"
+                    name="jobTitle"
+                    placeholder="e.g, Procurement Manager"
+                    required
+                  />
+                </div>
+                <div class="box">
+                  <label for="email">Email Address *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="email@example.com"
+                    required
+                  />
+                </div>
+                <div class="box">
+                  <label for="phoneNumber">Phone Number *</label>
+                  <input
+                    type="tel"
+                    name="phoneNumber"
+                    placeholder="+1 (555) 123-4567"
+                  />
+                </div>
+              </div>
+              <div class="name">
+                <label for="altPhoneNumber">Alternate Phone Number *</label>
+                <input
+                  type="tel"
+                  name="altPhoneNumber"
+                  placeholder="+1 (555) 987-6543"
+                  required
+                />
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <div class="head">
+                <img src="images/location.png" class="images" />
+                <h2>Business Address</h2>
+              </div>
+              <div class="name">
+                <label for="streetAddress">Street Address *</label>
+                <input
+                  type="text"
+                  name="streetAddress"
+                  placeholder="123 Main Street"
+                  required
+                />
+              </div>
+              <div class="box-4">
+                <div class="box">
+                  <label for="city">City *</label>
+                  <input type="text" name="city" placeholder="City" required />
+                </div>
+                <div class="box">
+                  <label for="state/province">State/Province *</label>
+                  <input
+                    type="text"
+                    name="state/province"
+                    placeholder="State"
+                    required
+                  />
+                </div>
+                <div class="box">
+                  <label for="zip">Zip/Postal Code *</label>
+                  <input
+                    type="text"
+                    name="zip"
+                    placeholder="12345"
+                    required
+                  />
+                </div>
+                <div class="box">
+                  <label for="country">Country *</label>
+                  <input type="text" name="country" required />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div>
+              <div class="head">
+                <img src="images/business1.png" class="images"/>
+                <h2>Business Details</h2>
+              </div>
+              <div class="name">
+                <label for="website">Website</label>
+                <input
+                  type="url"
+                  name="website"
+                  placeholder="https://www.example.com"
+                />
+              </div>
+              <div class="box-4">
+                <div class="box">
+                  <label for="employeeNumber">Number of Employees *</label>
+                  <select>
+                    <option value="">Select range</option>
+                    <option value="1-10">1-10</option>
+                    <option value="11-50">11-50</option>
+                    <option value="51-200">51-200</option>
+                    <option value="201-500">201-500</option>
+                    <option value="501-1000">501-1000</option>
+                    <option value="1000+">1000+</option>
+                  </select>
+                </div>
+                <div class="box">
+                  <label for="annualRevenue">Annual Revenue *</label>
+                  <select>
+                    <option value="">Select range</option>
+                    <option value="$0-$100,000">$0-$100,000</option>
+                    <option value="$100,000-$500,000">$100,000-$500,000</option>
+                    <option value="$500,000-$1million">
+                      $500,000-$1million
+                    </option>
+                    <option value="$1million-$5million">
+                      $1million-$5million
+                    </option>
+                    <option value="$5million-$10million">
+                      $5million-$10million
+                    </option>
+                    <option value="$10million+">$10million+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="products">
+                <label>Product/Service Categories *</label>
+                <div class="checkbox-group">
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="categories"
+                      value="Electronics"
+                    />Electronics</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="categories"
+                      value="Chemicals"
+                    />Chemicals</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="categories"
+                      value="Packaging"
+                    />Packaging</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="categories"
+                      value="Textiles"
+                    />Textiles</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="categories"
+                      value="Machinery"
+                    />Machinery</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="categories"
+                      value="medical-supplies"
+                    />Medical Supplies</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="categories"
+                      value="food&beverages"
+                    />Food & Beverages</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="categories"
+                      value="raw-materials"
+                    />Raw Materials</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="categories"
+                      value="office-suppliers"
+                    />Office Suppliers</label
+                  >
+                </div>
+              </div>
+              <div class="name">
+                <label for="description">Business Description *</label>
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="4"
+                  minlength="50"
+                  placeholder="Describe your business, products, and services... (minimum 50 characters)"
+                ></textarea>
+              </div>
+              <div class="name">
+                <label for="licenses">Certificate & Licenses *</label>
+                <input
+                  type="text"
+                  name="licenses"
+                  placeholder="e.g, ISO 9001, CE, FDA (comma-separated)"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div>
+                <div class="head">
+                    <img src="images/file.png" class="images">
+                    <h2>Banking & Tax Information</h2>
+                </div>
+                <div class="box-4">
+                    <div class="box">
+                        <label for="bankName">Bank Name *</label>
+                        <input type="text" name="bankName" placeholder="Bank name" required>
+                    </div>
+                    <div class="box">
+                        <label for="account">Account Number *</label>
+                        <input type="number" name="account" placeholder="Account Number" required>
+                    </div>
+                </div>
+                <div class="name">
+                    <label for="taxId">Tax ID/EIN *</label>
+                    <input type="text" name="taxId" placeholder="Tax identification number" required>
+                </div>
+                <div class="name">
+                    <label for="agree"><input type="checkbox" id="agree" name="agree">I agree to the terms and conditions and confirm that all information provided is accurate and complete.*</label>
+                </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="buttons">
+               <div>
+                <button type="reset" class="cancel">Cancel</button>
+               </div>
+               <div>
+                <button type="submit" class="submit">Submit Registration</button>
+               </div>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
