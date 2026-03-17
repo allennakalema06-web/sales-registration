@@ -8,9 +8,9 @@
   margin-left: 20px;
 }
 .square {
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
+  width: 100px;
+  height: 80px;
+  border-radius: 55px;
   border: 1px solid #cacaca;
   background-color: #eae8e8;
   margin-right: 20px;
